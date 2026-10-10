@@ -1,0 +1,192 @@
+
+/* Configurações gerais */
+body {
+    background: linear-gradient(135deg, #170f2e, #2b1850);
+    color: #f5efff;
+    font-family: 'Georgia', serif;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Área principal */
+.container {
+    max-width: 900px;
+}
+
+/* Título */
+h1 {
+    color: #d8b4fe;
+    font-family: 'Cinzel', serif;
+    font-size: 2.8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+/* Texto de apresentação */
+p {
+    color: #e2d8f5;
+    font-size: 1.05rem;
+}
+
+/* Formulário */
+form {
+    background-color: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(216, 180, 254, 0.3);
+    border-radius: 16px;
+    padding: 28px;
+    margin-top: 25px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Rótulo do campo */
+.form-label {
+    color: #eadcff;
+    font-weight: bold;
+}
+
+/* Campo de data */
+.form-control {
+    background-color: #f8f4ff;
+    border: 1px solid #b794f4;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+/* Campo quando selecionado */
+.form-control:focus {
+    border-color: #c084fc;
+    box-shadow: 0 0 0 0.2rem rgba(192, 132, 252, 0.25);
+}
+
+/* Botão principal */
+.btn-primary {
+    background-color: #8b5cf6;
+    border-color: #8b5cf6;
+    border-radius: 8px;
+    padding: 12px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Efeito ao passar o mouse */
+.btn-primary:hover {
+    background-color: #a78bfa;
+    border-color: #a78bfa;
+    transform: translateY(-2px);
+}
+
+/* Cartão do resultado */
+.card {
+    background-color: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(216, 180, 254, 0.4);
+    border-radius: 16px;
+    color: #f5efff;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    color: #d8b4fe;
+    font-size: 2.5rem;
+}
+
+/* Botão de voltar */
+.btn-secondary {
+    background-color: #49316e;
+    border-color: #49316e;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #63458f;
+    border-color: #63458f;
+    color: white;
+}
+
+/* Ajustes para telas pequenas */
+@media (max-width: 576px) {
+    h1 {
+        font-size: 2.1rem;
+    }
+
+    form {
+        padding: 20px;
+    }
+}
+
+
+/* Tela inicial: seleção da data de nascimento */
+#signo-form {
+    max-width: 520px;
+    margin: 30px auto 0;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(216, 180, 254, 0.3);
+    border-radius: 18px;
+    padding: 32px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+#signo-form .form-label {
+    display: block;
+    margin-bottom: 12px;
+    color: #eadcff;
+    font-size: 1.05rem;
+}
+
+#signo-form input[type="date"] {
+    width: 100%;
+    min-height: 48px;
+    background-color: #f8f4ff;
+    color: #302044;
+    border: 1px solid #b794f4;
+    border-radius: 10px;
+    padding: 10px 12px;
+}
+
+#signo-form input[type="date"]:focus {
+    border-color: #c084fc;
+    box-shadow: 0 0 0 0.2rem rgba(192, 132, 252, 0.25);
+}
+
+#signo-form .btn-primary {
+    margin-top: 8px;
+    min-height: 48px;
+    letter-spacing: 0.3px;
+}
+
+@media (max-width: 576px) {
+    #signo-form {
+        padding: 22px;
+    }
+}
+
+
+.imagem-zodiaco {
+    width: 320px;
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+    mix-blend-mode: multiply;
+    filter: drop-shadow(0 0 18px rgba(192, 132, 252, 0.35));
+    transition: transform 0.3s ease;
+}
+
+.imagem-zodiaco:hover {
+    transform: scale(1.04);
+}
+
+
+.imagem-zodiaco {
+    width: 450px !important;
+    max-width: 100%;
+    height: auto;
+    background: red !important;
+    mix-blend-mode: multiply;
+}
+
+.simbolo-signo{
+    font-size: 100px;
+    color: #005B8F;
+    line-height: 1;
+    margin-bottom: 15px;
+}
