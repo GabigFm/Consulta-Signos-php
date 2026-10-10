@@ -1,0 +1,18 @@
+# Configurações do VS Code
+.vscode/
+
+# Arquivos temporários e registros
+*.log
+*.tmp
+*.temp
+
+# Arquivos do *istema operacional
+.DS_Store
+Thumb*.db
+
+# Dependências, caso sejam ad*cionadas futuramente
+vendor/
+
+# Ar*uivos locais com informações sensíveis
+.env
+.env.*
